@@ -48,6 +48,21 @@ class Vehicle:
         print('Deleting name')
         del self.__name
 
+    @property
+    def manufacturer(self):
+        print('Getting manufacturer')
+        return self.__manufacturer
+
+    @manufacturer.setter
+    def manufacturer(self, new_manufacturer):
+        print('Setting manufacturer')
+        self.__manufacturer = new_manufacturer
+
+    @manufacturer.deleter
+    def manufacturer(self):
+        print('Deleting manufacturer')
+        del self.__manufacturer
+
     def fuel(self):
         print('Fueling Vehicle')
     
@@ -85,6 +100,22 @@ class Book:
     def name(self):
         print('Deleting name')
         del self.__name
+
+    @property
+    def publishYear(self):
+        print('Getting publication year')
+        return self.__year
+
+    @publishYear.setter
+    def publishYear(self, new_year):
+        print('Setting yeaer')
+        self.__year = new_year
+
+    @publishYear.deleter
+    def publishYear(self):
+        print('Deleting publication year')
+        del self.__year
+
 
     def read(self):
         print('Reading Book')
