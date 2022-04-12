@@ -25,7 +25,17 @@ class Animal:
         print('Animal Eating')
 
     def move(self):
-        print('Animal Moving around')
+        print('Animal moving around')
+
+class Fish(Animal):
+    def swim(self):
+        print("Swimming about")
+class Snake(Animal):
+    def slither(self):
+        print("Slithering about")
+class Person(Animal):
+    def talk(self):
+        print("Talking about something")
 
 class Vehicle:
     """Vehicle class"""
@@ -68,6 +78,20 @@ class Vehicle:
     
     def transport(self):
         print("Transporting something")
+    
+class Car(Vehicle):
+    def drive(self):
+        print("Driving car")
+class Bicycle(Vehicle):
+    def ride(self):
+        print("Riding bike")
+class Boat(Vehicle):
+    def drive(self):
+        print("Driving boat")
+class big_balloon(Vehicle):
+    def inflate(self):
+        print("Inflating hot air balloon")
+
 
 class Book:
     """Book class"""
@@ -119,4 +143,11 @@ class Book:
 
     def read(self):
         print('Reading Book')
+
+class Textbook(Book):
+    def study(self):
+        print("Studying book")
+class AddressBook(Book):
+    def search(self):
+        print("Searching for address")
     

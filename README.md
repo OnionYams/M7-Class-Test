@@ -9,6 +9,15 @@ Animal
 + eat() 
 + breathe()
 
+Snake
++ slither()
+
+Person
++ talk()
+
+Fish
++ swim()
+
 Book
 --------
 + name: string
@@ -17,6 +26,12 @@ Book
 --------
 + read() 
 
+Textbook
++ study()
+
+AddressBook
++ search()
+
 Vehicle
 --------
 + name: string
@@ -24,3 +39,15 @@ Vehicle
 --------
 + transport() 
 + fuel() 
+
+big_balloon
++ inflate()
+
+Bicycle
++ ride()
+
+Boat
++ drive()
+
+Car
++ drive()
